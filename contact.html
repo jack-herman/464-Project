@@ -5,6 +5,8 @@
 The WebsiteTM
 </title>
 <link rel='stylesheet' type='text/css' href='css/style.css'>
+<script src="scripts/submitFormProcess.js"></script>
+<script src="scripts/validSubmit.js"></script>
 </head>
 <body>
 <div class="flex_column">
@@ -19,11 +21,22 @@ The WebsiteTM
 <div class="contact_page">
 <!--contact-->
 <h2>This page will be for people to contact me i guess</h2>
-<form>
+<form id="submitForm" onsubmit="submitFormProcess()">
 <label for="email">Email</label>
-<input type="text" value="Email"><br>
-<label for="message">Message</label>
-<input type="text" value="Message"><br><br>
+<input id="email" type="text" name="email" value="Email"><br>
+<label for="message">Message</label><br>
+<input type="text" value="Message" size="50"><br>
+<label for="rating">Rating</label><br>
+<label for="rating">1-Star</label>
+<input type="radio" name="rating" value="1-Star"><br>
+<label for="rating">2-Star</label>
+<input type="radio" name="rating" value="2-Star"><br>
+<label for="rating">3-Star</label>
+<input type="radio" name="rating" value="3-Star"><br>
+<label for="rating">4-Star</label>
+<input type="radio" name="rating" value="4-Star"><br>
+<label for="rating">5-Star</label>
+<input type="radio" name="rating" value="5-Star"><br>
 <input type="submit" value="Submit">
 </form>
 </div>
