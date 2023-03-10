@@ -22,23 +22,20 @@ The WebsiteTM
 	});
 </script>
 </div>
-<nav class="flex_row nav_bar" onmouseout="hide()">
+<div class="flex_row nav_bar" onmouseout="hide()">
 <!--nav-->
-<ul class="Links">
-<li><a href="index.html">Home Page</a></li>
-<li>
-<a href="projects.html" onmouseover="show('m3')">Projects</a>
-<div id="m3" onmouseover="show('m3')">
-	<a href="#">Husker STEM Vr</a>
-	<a href="#">Grilling Simulator</a>
-	<a href="#">Minieval</a>
-	<a href="#">Hatatebot</a>
+<div class="nav_item"><a href="index.html">Home Page</a></div>
+<div class="nav_item" onmouseover="show('m3')"><a href="projects.html">Projects</a>
+<div id="m3" class="flex_column under_menu" onmouseover="show('m3')">
+<div class="under_item"><a href="#">Husker STEM Vr</a></div>
+<div class="under_item"><a href="#">Grilling Simulator</a></div>
+<div class="under_item"><a href="#">Minieval</a></div>
+<div class="under_item"><a href="#">Hatatebot</a></div>
 </div>
-</li>
-<li><a href="jobs.html">Job History</a></li>
-<li><a href="contact.html">Contact Me</a></li>
-</ul>
-</nav>
+</div>
+<div class="nav_item"><a href="jobs.html">Job History</a></div>
+<div class="nav_item"><a href="contact.html">Contact Me</a></div>
+</div>
 <div class="projects_page">
 <!--projects-->
 <h2>This is the projects page!</h2>

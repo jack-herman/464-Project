@@ -16,7 +16,13 @@ p {font-size: 22px;}
 .flex_column{display: flex;
 	     flex-direction: column;}
 
-.nav_bar{width: 100%;}
+.nav_bar{background-color: lightgray;
+	 width: 100%;}
+
+.under_menu{position: absolute;
+	    width: 25%;
+	    background-color: gray;
+	    visibility: hidden;}
 
 .home_page{width: 100%;
            padding: 10px;}
@@ -35,6 +41,11 @@ p {font-size: 22px;}
 	  width: 25%;
 	  height: 20px;
   	  border: 2px solid lightgray;}
+
+.under_item{color: black;
+	  text-align: center;
+	  width: 100%;
+	  height: 20px;}
 
 .Links li {
 float: left;

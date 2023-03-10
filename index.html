@@ -5,6 +5,7 @@
 The WebsiteTM
 </title>
 <link rel='stylesheet' type='text/css' href='css/style.css'>
+<script src="scripts/menus.js"></script>
 </head>
 <body>
 <div class="flex_column">
@@ -21,10 +22,17 @@ The WebsiteTM
 	});
 </script>
 </div>
-<div class="flex_row nav_bar">
+<div class="flex_row nav_bar" onmouseout="hide()">
 <!--nav-->
 <div class="nav_item"><a href="index.html">Home Page</a></div>
-<div class="nav_item"><a href="projects.html">Projects</a></div>
+<div class="nav_item" onmouseover="show('m3')"><a href="projects.html">Projects</a>
+<div id="m3" class="flex_column under_menu" onmouseover="show('m3')">
+<div class="under_item"><a href="#">Husker STEM Vr</a></div>
+<div class="under_item"><a href="#">Grilling Simulator</a></div>
+<div class="under_item"><a href="#">Minieval</a></div>
+<div class="under_item"><a href="#">Hatatebot</a></div>
+</div>
+</div>
 <div class="nav_item"><a href="jobs.html">Job History</a></div>
 <div class="nav_item"><a href="contact.html">Contact Me</a></div>
 </div>
