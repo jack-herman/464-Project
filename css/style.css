@@ -3,8 +3,10 @@
 body {margin: 0px;
       background-color: darkgray;}
 
-h1{background-color: yellow;
+.header{background-color: yellow;
    padding: 30px;}
+
+button#themebutton{float: right}
 
 p {font-size: 22px;}
 
@@ -14,23 +16,18 @@ p {font-size: 22px;}
 .flex_column{display: flex;
 	     flex-direction: column;}
 
-.nav_bar{background-color: lightgray;
-	 width: 100%;}
+.nav_bar{width: 100%;}
 
-.home_page{background-color: darkgray;
-	   width: 100%;
+.home_page{width: 100%;
            padding: 10px;}
 
-.projects_page{background-color: darkgray;
-	   width: 100%;
+.projects_page{width: 100%;
            padding: 10px;}
 
-.jobs_page{background-color: darkgray;
-	   width: 100%;
+.jobs_page{width: 100%;
            padding: 10px;}
 
-.contact_page{background-color: darkgray;
-	   width: 100%;
+.contact_page{width: 100%;
            padding: 10px;}
 
 .nav_item{color: black;
@@ -38,6 +35,52 @@ p {font-size: 22px;}
 	  width: 25%;
 	  height: 20px;
   	  border: 2px solid lightgray;}
+
+.Links li {
+float: left;
+width: 200px;
+border-right: 1px solid #FFF;
+font-weight: bold;
+font-size: .7em;
+text-align: center;
+list-style: none;
+}
+
+.Links li:last-child {
+width: 200px;
+border-right-width: 0;
+}
+
+.Links li a,
+.links li span
+{
+display: flex;
+height: 25px;
+line-height: 25px;
+background-color: lightgray;
+color: black;
+text-decoration: none;
+}
+
+.Links li a:hover {
+text-decoration: underline;
+}
+
+.Links div {
+position: absolute;
+background-color: gray;
+visibility: hidden;
+}
+
+.Links div a {
+display: block;
+width: 124px;
+margin-top: 2px;
+padding-left: 3px;
+background-color: gray;
+color: black;
+text-align: left;
+}
 
 a:link{text-decoration: none;
        color: black;}
