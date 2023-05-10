@@ -3,7 +3,7 @@
 $db_host = 'localhost';
 $db_user = 'root';
 $db_password = 'root';
-$db_db = 'webbook';
+$db_db = 'feedback';
 $db_port = 3306;
 
 $db = mysqli_connect(
