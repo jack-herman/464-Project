@@ -12,5 +12,6 @@
         ?>
 </article>
 </main>
+<a href="../contact.php">Back</a>
 </body>
 </html>
